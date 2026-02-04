@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import logo from "@/assets/logo-nicole.png";
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -15,13 +14,15 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-[#1a1612]">
       <div className="container mx-auto px-4 lg:px-8">
-        <nav className="flex items-center justify-between py-4 lg:py-6">
-          <a href="#" className="flex items-center">
-            <img
-              src={logo}
-              alt="Nicole Almeida - Advogada"
-              className="h-10 md:h-12 w-auto brightness-0 invert opacity-90"
-            />
+        <nav className="flex items-center justify-between py-4 lg:py-5">
+          {/* Text Logo */}
+          <a href="#" className="flex flex-col items-center">
+            <span className="font-serif text-xl md:text-2xl tracking-[0.15em] text-white font-medium">
+              NICOLE ALMEIDA
+            </span>
+            <span className="text-[10px] md:text-xs tracking-[0.3em] text-[#c9a86c] mt-0.5">
+              ADVOGADA
+            </span>
           </a>
 
           {/* Desktop Navigation */}
