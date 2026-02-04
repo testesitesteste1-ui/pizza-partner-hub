@@ -1,5 +1,5 @@
 import logo from "@/assets/logo-nicole.png";
-import { Instagram, Linkedin, Facebook } from "lucide-react";
+import { Instagram } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -9,7 +9,6 @@ const Footer = () => {
       { label: "Sobre", href: "#sobre" },
       { label: "Áreas de Atuação", href: "#areas" },
       { label: "Diferenciais", href: "#diferenciais" },
-      { label: "Depoimentos", href: "#depoimentos" },
       { label: "Contato", href: "#contato" },
     ],
     legal: [
@@ -17,12 +16,6 @@ const Footer = () => {
       { label: "Termos", href: "#" },
     ],
   };
-
-  const socials = [
-    { icon: Instagram, href: "#", label: "Instagram" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
-    { icon: Facebook, href: "#", label: "Facebook" },
-  ];
 
   return (
     <footer className="bg-cream border-t border-border">
@@ -41,18 +34,17 @@ const Footer = () => {
               soluções jurídicas personalizadas.
             </p>
             
-            {/* Social Links */}
+            {/* Social Links - Only Instagram */}
             <div className="flex gap-3 sm:gap-4">
-              {socials.map((social) => (
-                <a
-                  key={social.label}
-                  href={social.href}
-                  aria-label={social.label}
-                  className="w-9 h-9 sm:w-10 sm:h-10 rounded-full border border-champagne/30 flex items-center justify-center text-foreground/70 hover:bg-champagne hover:text-white hover:border-champagne transition-all"
-                >
-                  <social.icon className="w-4 h-4" />
-                </a>
-              ))}
+              <a
+                href="https://instagram.com/nalmeidaadvogada"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                className="w-9 h-9 sm:w-10 sm:h-10 rounded-full border border-champagne/30 flex items-center justify-center text-foreground/70 hover:bg-champagne hover:text-white hover:border-champagne transition-all"
+              >
+                <Instagram className="w-4 h-4" />
+              </a>
             </div>
           </div>
 
@@ -78,17 +70,22 @@ const Footer = () => {
             <h4 className="font-serif text-base sm:text-lg text-foreground mb-4 sm:mb-6">Contato</h4>
             <ul className="space-y-2 sm:space-y-3 text-xs sm:text-sm text-muted-foreground">
               <li>
-                <span className="block font-medium text-foreground/80">Telefone</span>
-                (11) 99250-1991
+                <span className="block font-medium text-foreground/80">Telefone / WhatsApp</span>
+                <a href="https://wa.me/5511992501991" target="_blank" rel="noopener noreferrer" className="hover:text-champagne-dark transition-colors">
+                  (11) 99250-1991
+                </a>
               </li>
               <li>
                 <span className="block font-medium text-foreground/80">E-mail</span>
-                contato@nicolealmeida.adv.br
+                <a href="mailto:nalmeidaadvogada@hotmail.com" className="hover:text-champagne-dark transition-colors">
+                  nalmeidaadvogada@hotmail.com
+                </a>
               </li>
               <li>
-                <span className="block font-medium text-foreground/80">Endereço</span>
-                Av. Paulista, 1000<br />
-                São Paulo - SP
+                <span className="block font-medium text-foreground/80">Instagram</span>
+                <a href="https://instagram.com/nalmeidaadvogada" target="_blank" rel="noopener noreferrer" className="hover:text-champagne-dark transition-colors">
+                  @nalmeidaadvogada
+                </a>
               </li>
             </ul>
           </div>
