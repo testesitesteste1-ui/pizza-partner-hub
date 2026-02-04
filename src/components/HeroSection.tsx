@@ -12,7 +12,7 @@ const HeroSection = () => {
 
   return (
     <section 
-      className="relative min-h-[85vh] lg:min-h-screen flex items-center overflow-hidden"
+      className="relative min-h-[60vh] lg:min-h-[75vh] flex items-center overflow-hidden"
       style={{
         backgroundImage: `url(${heroBackground})`,
         backgroundSize: "cover",
