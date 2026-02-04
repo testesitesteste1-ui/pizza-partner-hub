@@ -20,7 +20,7 @@ const HeroSection = () => {
       }}
     >
       {/* Overlay for better text readability on mobile */}
-      <div className="absolute inset-0 bg-gradient-to-r from-cream/90 via-cream/70 to-transparent lg:from-cream/80 lg:via-cream/40 lg:to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-b from-cream/95 via-cream/85 to-cream/70 lg:bg-gradient-to-r lg:from-cream/85 lg:via-cream/50 lg:to-transparent" />
       
       <div className="container mx-auto px-4 lg:px-8 pt-24 pb-16 lg:pt-0 lg:pb-0 relative z-10">
         <div className="max-w-2xl">
