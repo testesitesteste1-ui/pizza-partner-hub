@@ -23,16 +23,17 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-gradient-to-b from-cream/95 via-cream/85 to-cream/70 lg:bg-gradient-to-r lg:from-cream/85 lg:via-cream/50 lg:to-transparent" />
       
       <div className="container mx-auto px-4 lg:px-8 pt-24 pb-16 lg:pt-0 lg:pb-0 relative z-10">
-        <div className="max-w-2xl">
+        <div className="lg:max-w-3xl xl:max-w-4xl">
           {/* Content */}
           <div className="text-left">
-            <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] xl:text-6xl font-medium text-foreground leading-[1.15] mb-5 sm:mb-6 animate-fade-up">
+            <h1 className="font-serif text-[1.75rem] sm:text-4xl md:text-5xl lg:text-[3.5rem] xl:text-6xl font-medium text-foreground leading-[1.2] mb-5 sm:mb-6 animate-fade-up">
               Soluções jurídicas para empresas,
-              <br />
+              <br className="hidden sm:block" />
+              <span className="sm:hidden"> </span>
               com estratégia e clareza.
             </h1>
             
-            <p className="text-base sm:text-lg text-muted-foreground max-w-xl mb-6 sm:mb-8 animate-fade-up leading-relaxed" style={{ animationDelay: "0.1s" }}>
+            <p className="text-sm sm:text-lg text-foreground/70 max-w-none lg:max-w-2xl mb-6 sm:mb-8 animate-fade-up leading-relaxed" style={{ animationDelay: "0.1s" }}>
               Atuação consultiva e contenciosa com foco em prevenção de riscos, 
               contratos bem estruturados e segurança para decisões empresariais.
             </p>
