@@ -47,8 +47,8 @@ const PracticeAreasSection = () => {
           </h2>
           <div className="gold-divider mb-4 sm:mb-6" />
           <p className="text-sm sm:text-base text-muted-foreground px-4">
-            Atuação especializada em diversas áreas do Direito, sempre com foco 
-            na solução mais adequada para cada situação.
+            Atuação especializada em Direito Empresarial e Tributário, atuando nos âmbitos 
+            contencioso, consultivo e na elaboração de pareceres.
           </p>
         </div>
 
