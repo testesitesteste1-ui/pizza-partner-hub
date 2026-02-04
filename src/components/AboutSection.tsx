@@ -3,10 +3,8 @@ import nicolePortrait from "@/assets/nicole-portrait.jpg";
 
 const AboutSection = () => {
   const credentials = [
-    { icon: Scale, label: "OAB/SP", value: "123.456" },
-    { icon: BookOpen, label: "Formação", value: "USP - Direito" },
-    { icon: Award, label: "Experiência", value: "+10 Anos" },
-    { icon: Heart, label: "Clientes", value: "+500" },
+    { icon: Scale, label: "OAB/SP", value: "540.009" },
+    { icon: BookOpen, label: "Formação", value: "Direito Mackenzie" },
   ];
 
   return (
