@@ -79,7 +79,7 @@ const Footer = () => {
             <ul className="space-y-2 sm:space-y-3 text-xs sm:text-sm text-muted-foreground">
               <li>
                 <span className="block font-medium text-foreground/80">Telefone</span>
-                (11) 99999-9999
+                (11) 99250-1991
               </li>
               <li>
                 <span className="block font-medium text-foreground/80">E-mail</span>
