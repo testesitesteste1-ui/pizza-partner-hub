@@ -5,41 +5,49 @@ const PracticeAreasSection = () => {
     {
       icon: Scale,
       title: "Direito Civil",
+      shortDesc: "Relações contratuais e responsabilidade civil.",
       description: "Atuação em demandas cíveis de forma ampla, envolvendo relações contratuais, responsabilidade civil e questões patrimoniais, com foco na prevenção de conflitos e na segurança jurídica.",
     },
     {
       icon: FileText,
       title: "Contratos",
+      shortDesc: "Elaboração, revisão e negociação.",
       description: "Assessoria na elaboração, revisão e negociação de contratos, com atenção à clareza das cláusulas, à prevenção de litígios e à segurança das relações jurídicas.",
     },
     {
       icon: Users,
       title: "Societário",
+      shortDesc: "Constituição e reorganização empresarial.",
       description: "Assessoria jurídica na constituição de sociedades, reorganizações empresariais e resolução de disputas entre sócios, com suporte às decisões estruturais e estratégicas da vida societária.",
     },
     {
       icon: Calculator,
       title: "Tributário",
+      shortDesc: "Consultivo e contencioso tributário.",
       description: "Atuação no consultivo e no contencioso tributário, com foco na análise de riscos, na conformidade fiscal e no suporte às decisões estratégicas.",
     },
     {
       icon: Award,
       title: "Propriedade Industrial",
+      shortDesc: "Registro de marcas e proteção.",
       description: "Assessoria na proteção de ativos intangíveis, com foco no registro de marcas, estratégias de proteção e defesa dos direitos de propriedade industrial.",
     },
     {
       icon: Home,
       title: "Sucessões e Inventário",
+      shortDesc: "Inventário e planejamento sucessório.",
       description: "Atuação em processos de inventário e planejamento sucessório, com orientação jurídica voltada à organização patrimonial e à adequada transmissão de bens.",
     },
     {
       icon: Heart,
       title: "Direito de Família",
+      shortDesc: "Questões pessoais e patrimoniais.",
       description: "Assessoria jurídica em demandas de direito de família, com foco na condução técnica e responsável de questões pessoais e patrimoniais, respeitando as particularidades de cada caso.",
     },
     {
       icon: BookOpen,
-      title: "Consultoria Jurídica e Pareceres",
+      title: "Consultoria e Pareceres",
+      shortDesc: "Análise de riscos e apoio decisório.",
       description: "Atuação consultiva e elaboração de pareceres jurídicos voltados à análise de riscos, interpretação normativa e apoio à tomada de decisões.",
     },
   ];
@@ -63,7 +71,7 @@ const PracticeAreasSection = () => {
         </div>
 
         {/* Areas Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
           {areas.map((area, index) => (
             <div
               key={index}
@@ -77,6 +85,12 @@ const PracticeAreasSection = () => {
                 {area.title}
               </h3>
               
+              {/* Short description for mobile */}
+              <p className="sm:hidden text-[10px] text-muted-foreground leading-snug">
+                {area.shortDesc}
+              </p>
+              
+              {/* Full description for desktop */}
               <p className="hidden sm:block text-sm text-muted-foreground leading-relaxed">
                 {area.description}
               </p>
