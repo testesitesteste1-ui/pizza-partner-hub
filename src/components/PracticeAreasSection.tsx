@@ -1,16 +1,16 @@
-import { Scale, FileText, Users, Calculator } from "lucide-react";
+import { Scale, FileText, Users, Calculator, Award, Home, Heart, BookOpen } from "lucide-react";
 
 const PracticeAreasSection = () => {
   const areas = [
     {
       icon: Scale,
-      title: "Cível Empresarial",
-      description: "Atuação em litígios envolvendo contratos, responsabilidade civil e patrimônio, com foco na condução estratégica das disputas e na mitigação de riscos que impactam os negócios.",
+      title: "Direito Civil",
+      description: "Atuação em demandas cíveis de forma ampla, envolvendo relações contratuais, responsabilidade civil e questões patrimoniais, com foco na prevenção de conflitos e na segurança jurídica.",
     },
     {
       icon: FileText,
       title: "Contratos",
-      description: "Assessoria na elaboração, revisão e negociação de contratos empresariais, com atenção à prevenção de conflitos e à segurança jurídica das relações comerciais.",
+      description: "Assessoria na elaboração, revisão e negociação de contratos, com atenção à clareza das cláusulas, à prevenção de litígios e à segurança das relações jurídicas.",
     },
     {
       icon: Users,
@@ -20,7 +20,27 @@ const PracticeAreasSection = () => {
     {
       icon: Calculator,
       title: "Tributário",
-      description: "Atuação no contencioso e no consultivo tributário, com foco na análise de riscos, na conformidade fiscal e no suporte às decisões estratégicas das empresas.",
+      description: "Atuação no consultivo e no contencioso tributário, com foco na análise de riscos, na conformidade fiscal e no suporte às decisões estratégicas.",
+    },
+    {
+      icon: Award,
+      title: "Propriedade Industrial",
+      description: "Assessoria na proteção de ativos intangíveis, com foco no registro de marcas, estratégias de proteção e defesa dos direitos de propriedade industrial.",
+    },
+    {
+      icon: Home,
+      title: "Sucessões e Inventário",
+      description: "Atuação em processos de inventário e planejamento sucessório, com orientação jurídica voltada à organização patrimonial e à adequada transmissão de bens.",
+    },
+    {
+      icon: Heart,
+      title: "Direito de Família",
+      description: "Assessoria jurídica em demandas de direito de família, com foco na condução técnica e responsável de questões pessoais e patrimoniais, respeitando as particularidades de cada caso.",
+    },
+    {
+      icon: BookOpen,
+      title: "Consultoria Jurídica e Pareceres",
+      description: "Atuação consultiva e elaboração de pareceres jurídicos voltados à análise de riscos, interpretação normativa e apoio à tomada de decisões.",
     },
   ];
 
@@ -43,28 +63,23 @@ const PracticeAreasSection = () => {
         </div>
 
         {/* Areas Grid */}
-        <div className="grid sm:grid-cols-2 gap-4 sm:gap-6 lg:gap-8 max-w-4xl mx-auto">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
           {areas.map((area, index) => (
             <div
               key={index}
-              className="group bg-card p-5 sm:p-8 rounded-xl border border-transparent hover-gold hover-lift cursor-pointer"
+              className="group bg-card p-5 sm:p-6 rounded-xl border border-transparent hover-gold hover-lift cursor-pointer"
             >
-              <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-lg bg-blush flex items-center justify-center mb-4 sm:mb-6 group-hover:bg-champagne/20 transition-colors">
-                <area.icon className="w-6 h-6 sm:w-7 sm:h-7 text-champagne-dark" />
+              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-blush flex items-center justify-center mb-3 sm:mb-4 group-hover:bg-champagne/20 transition-colors">
+                <area.icon className="w-5 h-5 sm:w-6 sm:h-6 text-champagne-dark" />
               </div>
               
-              <h3 className="font-serif text-xl sm:text-2xl text-foreground mb-2 sm:mb-4 group-hover:text-champagne-dark transition-colors">
+              <h3 className="font-serif text-lg sm:text-xl text-foreground mb-2 sm:mb-3 group-hover:text-champagne-dark transition-colors">
                 {area.title}
               </h3>
               
-              <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
+              <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
                 {area.description}
               </p>
-
-              <div className="mt-4 sm:mt-6 flex items-center text-champagne-dark font-medium text-sm opacity-0 group-hover:opacity-100 transition-opacity">
-                Saiba mais
-                <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
-              </div>
             </div>
           ))}
         </div>
