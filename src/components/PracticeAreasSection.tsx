@@ -1,4 +1,4 @@
-import { Scale, FileText, Users, Calculator, Award, Home, Heart, BookOpen } from "lucide-react";
+import { Scale, FileText, Users, Calculator, Briefcase, Home, Heart, BookOpen } from "lucide-react";
 
 const PracticeAreasSection = () => {
   const areas = [
@@ -27,10 +27,10 @@ const PracticeAreasSection = () => {
       description: "Atuação no consultivo e no contencioso tributário, com foco na análise de riscos, na conformidade fiscal e no suporte às decisões estratégicas.",
     },
     {
-      icon: Award,
-      title: "Propriedade Industrial",
-      shortDesc: "Registro de marcas e proteção.",
-      description: "Assessoria na proteção de ativos intangíveis, com foco no registro de marcas, estratégias de proteção e defesa dos direitos de propriedade industrial.",
+      icon: Briefcase,
+      title: "Direito do Trabalho",
+      shortDesc: "Orientação preventiva e demandas.",
+      description: "Assessoria jurídica em questões trabalhistas, com foco na orientação preventiva, na gestão de riscos e na condução técnica de demandas administrativas e judiciais.",
     },
     {
       icon: Home,
