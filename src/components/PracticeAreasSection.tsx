@@ -63,21 +63,21 @@ const PracticeAreasSection = () => {
         </div>
 
         {/* Areas Grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
           {areas.map((area, index) => (
             <div
               key={index}
-              className="group bg-card p-5 sm:p-6 rounded-xl border border-transparent hover-gold hover-lift cursor-pointer"
+              className="group bg-card p-3 sm:p-6 rounded-xl border border-transparent hover-gold hover-lift cursor-pointer"
             >
-              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-blush flex items-center justify-center mb-3 sm:mb-4 group-hover:bg-champagne/20 transition-colors">
-                <area.icon className="w-5 h-5 sm:w-6 sm:h-6 text-champagne-dark" />
+              <div className="w-8 h-8 sm:w-12 sm:h-12 rounded-lg bg-blush flex items-center justify-center mb-2 sm:mb-4 group-hover:bg-champagne/20 transition-colors">
+                <area.icon className="w-4 h-4 sm:w-6 sm:h-6 text-champagne-dark" />
               </div>
               
-              <h3 className="font-serif text-lg sm:text-xl text-foreground mb-2 sm:mb-3 group-hover:text-champagne-dark transition-colors">
+              <h3 className="font-serif text-sm sm:text-xl text-foreground mb-1 sm:mb-3 group-hover:text-champagne-dark transition-colors leading-tight">
                 {area.title}
               </h3>
               
-              <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
+              <p className="hidden sm:block text-sm text-muted-foreground leading-relaxed">
                 {area.description}
               </p>
             </div>
