@@ -1,36 +1,26 @@
-import { Users, FileText, Briefcase, Home, Heart, Scale } from "lucide-react";
+import { Scale, FileText, Users, Calculator } from "lucide-react";
 
 const PracticeAreasSection = () => {
   const areas = [
     {
-      icon: Users,
-      title: "Direito de Família",
-      description: "Divórcios, guarda, pensão alimentícia e mediação familiar.",
+      icon: Scale,
+      title: "Cível Empresarial",
+      description: "Atuação em litígios envolvendo contratos, responsabilidade civil e patrimônio, com foco na condução estratégica das disputas e na mitigação de riscos que impactam os negócios.",
     },
     {
       icon: FileText,
-      title: "Direito Civil",
-      description: "Contratos, responsabilidade civil e direito do consumidor.",
+      title: "Contratos",
+      description: "Assessoria na elaboração, revisão e negociação de contratos empresariais, com atenção à prevenção de conflitos e à segurança jurídica das relações comerciais.",
     },
     {
-      icon: Briefcase,
-      title: "Direito Trabalhista",
-      description: "Reclamações trabalhistas e consultoria empresarial.",
+      icon: Users,
+      title: "Societário",
+      description: "Assessoria jurídica na constituição de sociedades, reorganizações empresariais e resolução de disputas entre sócios, com suporte às decisões estruturais e estratégicas da vida societária.",
     },
     {
-      icon: Home,
-      title: "Direito Imobiliário",
-      description: "Compra, venda, locações e regularização de imóveis.",
-    },
-    {
-      icon: Heart,
-      title: "Sucessões e Inventário",
-      description: "Planejamento sucessório, testamentos e inventários.",
-    },
-    {
-      icon: Scale,
-      title: "Consultoria Jurídica",
-      description: "Assessoria preventiva para pessoas físicas e empresas.",
+      icon: Calculator,
+      title: "Tributário",
+      description: "Atuação no contencioso e no consultivo tributário, com foco na análise de riscos, na conformidade fiscal e no suporte às decisões estratégicas das empresas.",
     },
   ];
 
@@ -53,7 +43,7 @@ const PracticeAreasSection = () => {
         </div>
 
         {/* Areas Grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
+        <div className="grid sm:grid-cols-2 gap-4 sm:gap-6 lg:gap-8 max-w-4xl mx-auto">
           {areas.map((area, index) => (
             <div
               key={index}
