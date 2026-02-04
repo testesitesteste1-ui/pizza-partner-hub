@@ -1,26 +1,26 @@
-import { Heart, Target, Eye, Shield } from "lucide-react";
+import { Handshake, Target, Eye, Shield } from "lucide-react";
 
 const DifferentialsSection = () => {
   const differentials = [
     {
-      icon: Heart,
-      title: "Atendimento Humanizado",
-      description: "Cada cliente é único. Escuto e acolho suas necessidades antes de propor soluções.",
+      icon: Handshake,
+      title: "Atuação Estratégica e Preventiva",
+      description: "Cada caso é analisado a partir do contexto do negócio, com foco na prevenção de conflitos e na construção de soluções jurídicas consistentes e seguras.",
     },
     {
       icon: Target,
-      title: "Estratégias Personalizadas",
-      description: "Cada caso é analisado para desenvolver a melhor estratégia possível.",
+      title: "Análise Personalizada das Demandas",
+      description: "As estratégias são desenvolvidas de forma individualizada, considerando os objetivos, riscos e particularidades de cada empresa ou operação.",
     },
     {
       icon: Eye,
-      title: "Transparência Total",
-      description: "Você sempre saberá o que está acontecendo no seu processo.",
+      title: "Clareza e Transparência na Comunicação",
+      description: "O cliente acompanha cada etapa da atuação jurídica com informações claras, linguagem acessível e alinhamento constante sobre os próximos passos.",
     },
     {
       icon: Shield,
-      title: "Compromisso com Resultados",
-      description: "Resolvo seu problema da forma mais eficiente, dentro da ética e da lei.",
+      title: "Compromisso com Segurança Jurídica",
+      description: "A atuação é pautada pelo rigor técnico, pela ética profissional e pela busca contínua de segurança jurídica nas decisões estratégicas.",
     },
   ];
 
@@ -33,14 +33,14 @@ const DifferentialsSection = () => {
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-16">
           <span className="inline-block text-xs sm:text-sm font-medium tracking-[0.2em] sm:tracking-[0.3em] uppercase text-champagne-dark mb-3 sm:mb-4">
-            Por Que Me Escolher
+            Diferenciais
           </span>
           <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl text-foreground mb-4 sm:mb-6">
             Meus Diferenciais
           </h2>
           <div className="gold-divider mb-4 sm:mb-6" />
           <p className="text-sm sm:text-base text-muted-foreground px-4">
-            O que faz do meu trabalho uma experiência diferente no mundo jurídico.
+            O que orienta minha atuação jurídica e diferencia a forma como conduzo cada demanda.
           </p>
         </div>
 

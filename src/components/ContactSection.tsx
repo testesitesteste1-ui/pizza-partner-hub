@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { MapPin, Phone, Mail, Clock, Send } from "lucide-react";
+import { Phone, Mail, Send, Instagram } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 const ContactSection = () => {
@@ -26,24 +26,22 @@ const ContactSection = () => {
 
   const contactInfo = [
     {
-      icon: MapPin,
-      title: "Endereço",
-      value: "Av. Paulista, 1000 - Sala 501\nBela Vista, São Paulo - SP",
-    },
-    {
       icon: Phone,
-      title: "Telefone",
-      value: "(11) 99999-9999",
+      title: "Telefone / WhatsApp",
+      value: "(11) 99250-1991",
+      href: "https://wa.me/5511992501991",
     },
     {
       icon: Mail,
       title: "E-mail",
-      value: "contato@nicolealmeida.adv.br",
+      value: "nalmeidaadvogada@hotmail.com",
+      href: "mailto:nalmeidaadvogada@hotmail.com",
     },
     {
-      icon: Clock,
-      title: "Horário",
-      value: "Seg - Sex: 9h às 18h",
+      icon: Instagram,
+      title: "Instagram",
+      value: "@nalmeidaadvogada",
+      href: "https://instagram.com/nalmeidaadvogada",
     },
   ];
 
@@ -68,36 +66,24 @@ const ContactSection = () => {
           {/* Contact Info */}
           <div className="lg:col-span-2 space-y-6 sm:space-y-8">
             {contactInfo.map((item, index) => (
-              <div key={index} className="flex gap-3 sm:gap-4">
-                <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-blush flex items-center justify-center">
+              <a 
+                key={index} 
+                href={item.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex gap-3 sm:gap-4 group hover:bg-blush-light/50 p-2 -m-2 rounded-lg transition-colors"
+              >
+                <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-blush flex items-center justify-center group-hover:bg-champagne/20 transition-colors">
                   <item.icon className="w-4 h-4 sm:w-5 sm:h-5 text-champagne-dark" />
                 </div>
                 <div>
                   <p className="font-medium text-sm sm:text-base text-foreground mb-0.5 sm:mb-1">{item.title}</p>
-                  <p className="text-muted-foreground whitespace-pre-line text-xs sm:text-sm">
+                  <p className="text-muted-foreground whitespace-pre-line text-xs sm:text-sm group-hover:text-champagne-dark transition-colors">
                     {item.value}
                   </p>
                 </div>
-              </div>
+              </a>
             ))}
-
-            {/* Social */}
-            <div className="pt-4 sm:pt-6 border-t border-border">
-              <p className="font-medium text-sm sm:text-base text-foreground mb-3 sm:mb-4">Redes Sociais</p>
-              <div className="flex gap-3 sm:gap-4">
-                {["Instagram", "LinkedIn", "Facebook"].map((social) => (
-                  <a
-                    key={social}
-                    href="#"
-                    className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-blush flex items-center justify-center text-foreground hover:bg-champagne hover:text-white transition-colors"
-                  >
-                    <span className="text-xs font-medium">
-                      {social.charAt(0)}
-                    </span>
-                  </a>
-                ))}
-              </div>
-            </div>
           </div>
 
           {/* Contact Form */}
