@@ -27,7 +27,7 @@ const HeroSection = () => {
           {/* Content */}
           <div className="text-left">
             <h1 className="font-serif text-[1.75rem] sm:text-4xl md:text-5xl lg:text-[3.5rem] xl:text-6xl font-medium text-foreground leading-[1.2] mb-5 sm:mb-6 animate-fade-up">
-              Soluções jurídicas para empresas,
+              Soluções jurídicas
               <br className="hidden sm:block" />
               <span className="sm:hidden"> </span>
               com estratégia e clareza.
